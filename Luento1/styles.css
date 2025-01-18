@@ -1,8 +1,10 @@
+/* Yleiset tyylit */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f9f9f9;
 }
 header {
     background: #333;
@@ -31,7 +33,7 @@ section {
 #home {
     background: #f4f4f4;
 }
-#services {
+#about {
     background: #ddd;
 }
 #contact {
@@ -58,10 +60,10 @@ form input, form textarea, form button {
     padding: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1rem; /* Korjaa lomake-elementtien käytettävyys */
+    font-size: 1rem;
 }
 form textarea {
-    resize: vertical; /* Sallii viestin korkeuden säätämisen */
+    resize: vertical;
 }
 form button {
     background: #333;

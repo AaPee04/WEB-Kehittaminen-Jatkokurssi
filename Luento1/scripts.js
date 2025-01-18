@@ -1,15 +1,15 @@
 document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault(); // Estää lomakkeen uudelleenlatauksen
+    e.preventDefault(); // Prevent page reload
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
     if (name && email && message) {
-        // Näytä kiitosviesti
+        // Display success message
         document.getElementById('successMessage').style.display = 'block';
-        // Tyhjennä lomake
+        // Reset the form
         this.reset();
     } else {
-        alert('Täytä kaikki kentät ennen lähettämistä.');
+        alert('Please fill out all fields before submitting.');
     }
 });

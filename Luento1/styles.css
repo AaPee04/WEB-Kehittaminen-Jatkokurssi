@@ -58,6 +58,10 @@ form input, form textarea, form button {
     padding: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1rem; /* Korjaa lomake-elementtien käytettävyys */
+}
+form textarea {
+    resize: vertical; /* Sallii viestin korkeuden säätämisen */
 }
 form button {
     background: #333;

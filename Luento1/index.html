@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tervetuloa</h1>
+    </header>
+    <nav>
+        <a href="#home">Koti</a>
+        <a href="#services">Palvelut</a>
+        <a href="#contact">Ota yhteyttä</a>
+    </nav>
+    <section id="home">
+        <h2>Koti</h2>
+        <p>Tämä on kotisivumme aloitusosio.</p>
+    </section>
+    <section id="services">
+        <h2>Palvelut</h2>
+        <p>Tarjoamme laajan valikoiman palveluita.</p>
+    </section>
+    <section id="contact">
+        <h2>Ota yhteyttä</h2>
+        <p>Voit ottaa meihin yhteyttä helposti täältä:</p>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Nimesi" required>
+            <input type="email" id="email" placeholder="Sähköpostisi" required>
+            <textarea id="message" placeholder="Viesti" required></textarea>
+            <button type="submit">Lähetä</button>
+        </form>
+        <p id="successMessage" style="display: none; color: green; margin-top: 10px;">Kiitos palautteestasi! Otamme sinuun yhteyttä pian.</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Yrityksen nimi</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

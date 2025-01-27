@@ -1,65 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Single Page Website</title>
+    <title>F1 Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background-color: #000;
+            /* Musta tausta */
         }
+
         header {
-            background: #333;
+            background: #000;
+            /* Musta */
             color: #fff;
+            /* Valkoinen */
             padding: 1rem 0;
             text-align: center;
         }
+
         nav {
-            background: #444;
+            background: #f00;
+            /* Punainen */
             padding: 0.5rem 0;
             text-align: center;
         }
+
         nav a {
             color: #fff;
+            /* Valkoinen */
             text-decoration: none;
             margin: 0 15px;
             font-size: 1rem;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
+
         section {
             padding: 2rem;
             text-align: center;
+            width: 100%;
+            /* Varmistetaan, että osiot vievät koko leveyden */
+            display: block;
+            /* Varmistetaan lohkotason asettelu */
         }
+
         #home {
-            background: #f4f4f4;
+            background: #fff;
+            /* Valkoinen */
+            color: #000;
+            /* Musta */
         }
+
         #about {
-            background: #ddd;
+            background: #fff;
+            /* Valkoinen */
+            color: #000;
+            /* Musta */
         }
+
         #contact {
-            background: #bbb;
+            background: #fff;
+            /* Valkoinen */
+            color: #000;
+            /* Musta */
         }
+
         footer {
-            background: #333;
+            background: #000;
+            /* Musta */
             color: #fff;
+            /* Valkoinen */
             padding: 1rem 0;
             text-align: center;
         }
+
         form {
             max-width: 500px;
             margin: 0 auto;
             text-align: left;
             background: #fff;
+            /* Valkoinen */
             padding: 1.5rem;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        form input, form textarea, form button {
+
+        form input,
+        form textarea,
+        form button {
             width: 100%;
             margin: 0.5rem 0;
             padding: 0.8rem;
@@ -67,29 +103,51 @@
             border-radius: 4px;
             font-size: 1rem;
         }
+
         form textarea {
             resize: vertical;
         }
+
         form button {
-            background: #333;
+            background: #f00;
+            /* Punainen */
             color: #fff;
+            /* Valkoinen */
             border: none;
             cursor: pointer;
         }
+
         form button:hover {
-            background: #444;
+            background: #c00;
+            /* Tummempi punainen */
         }
+
         @media (max-width: 600px) {
             nav a {
                 display: block;
                 margin: 10px 0;
             }
         }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 300px;
+            /* Kuva pienemmäksi */
+            max-height: 200px;
+            height: auto;
+            width: auto;
+            border: 2px solid #f00;
+            /* Punainen reunus */
+            border-radius: 10px;
+            /* Pehmeät kulmat */
+        }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Welcome</h1>
+        <h1>Welcome to Formula 1 website</h1>
     </header>
     <nav>
         <a href="#home">Home</a>
@@ -98,11 +156,13 @@
     </nav>
     <section id="home">
         <h2>Home</h2>
-        <p>This is the homepage section.</p>
+        <p>This is the homepage section of the Formula 1 website.</p>
+        <img src="formula-1-logo-red.jpg" alt="Formula 1 Logo">
     </section>
     <section id="about">
         <h2>About</h2>
-        <p>This is the section where you learn more about the website.</p>
+        <p>This is the section where you learn more about Formula 1.</p>
+        <p>Learn more about <a href="https://en.wikipedia.org/wiki/Formula_1" target="_blank">Formula 1</a>.</p>
     </section>
     <section id="contact">
         <h2>Contact Us</h2>
@@ -113,7 +173,8 @@
             <textarea id="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
-        <p id="successMessage" style="display: none; color: green; margin-top: 10px;">Thank you for your feedback! We will get back to you soon.</p>
+        <p id="successMessage" style="display: none; color: green; margin-top: 10px;">Thank you for your feedback! We
+            will get back to you soon.</p>
     </section>
     <footer>
         <p>&copy; 2025 Single Page Website. All Rights Reserved.</p>
@@ -136,4 +197,5 @@
         });
     </script>
 </body>
+
 </html>

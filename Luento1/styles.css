@@ -1,60 +1,77 @@
-/* Yleiset tyylit */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #000; /* Musta tausta */
 }
+
 header {
-    background: #333;
-    color: #fff;
+    background: #000; /* Musta */
+    color: #fff; /* Valkoinen */
     padding: 1rem 0;
     text-align: center;
 }
+
 nav {
-    background: #444;
+    background: #f00; /* Punainen */
     padding: 0.5rem 0;
     text-align: center;
 }
+
 nav a {
-    color: #fff;
+    color: #fff; /* Valkoinen */
     text-decoration: none;
     margin: 0 15px;
     font-size: 1rem;
 }
+
 nav a:hover {
     text-decoration: underline;
 }
+
 section {
     padding: 2rem;
     text-align: center;
+    width: 100%; /* Varmistetaan, että osiot vievät koko leveyden */
+    display: block; /* Varmistetaan lohkotason asettelu */
 }
+
 #home {
-    background: #f4f4f4;
+    background: #fff; /* Valkoinen */
+    color: #000; /* Musta */
 }
+
 #about {
-    background: #ddd;
+    background: #fff; /* Valkoinen */
+    color: #000; /* Musta */
 }
+
 #contact {
-    background: #bbb;
+    background: #fff; /* Valkoinen */
+    color: #000; /* Musta */
 }
+
 footer {
-    background: #333;
-    color: #fff;
+    background: #000; /* Musta */
+    color: #fff; /* Valkoinen */
     padding: 1rem 0;
     text-align: center;
 }
+
 form {
     max-width: 500px;
     margin: 0 auto;
     text-align: left;
-    background: #fff;
+    background: #fff; /* Valkoinen */
     padding: 1.5rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-form input, form textarea, form button {
+
+form input,
+form textarea,
+form button {
     width: 100%;
     margin: 0.5rem 0;
     padding: 0.8rem;
@@ -62,21 +79,36 @@ form input, form textarea, form button {
     border-radius: 4px;
     font-size: 1rem;
 }
+
 form textarea {
     resize: vertical;
 }
+
 form button {
-    background: #333;
-    color: #fff;
+    background: #f00; /* Punainen */
+    color: #fff; /* Valkoinen */
     border: none;
     cursor: pointer;
 }
+
 form button:hover {
-    background: #444;
+    background: #c00; /* Tummempi punainen */
 }
+
 @media (max-width: 600px) {
     nav a {
         display: block;
         margin: 10px 0;
     }
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px; /* Kuva pienemmäksi */
+    max-height: 200px;
+    height: auto;
+    width: auto;
+    border: 2px solid #f00; /* Punainen reunus */
+    border-radius: 10px; /* Pehmeät kulmat */
 }

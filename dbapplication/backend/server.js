@@ -7,6 +7,7 @@ const port = 3000;
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
+app.use(express.static('public')); 
 
 // Connect to the database
 let db = new sqlite3.Database('./mydatabase.db', (err) => {
